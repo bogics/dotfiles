@@ -31,9 +31,20 @@ filetype plugin indent on    " required
 set splitbelow
 set splitright
 
-syntax enable
-set background=dark
-colorscheme solarized
+" syntax enable
+if &diff
+    syntax off
+    colorscheme molokai
+    highlight DiffAdd cterm=none ctermfg=green ctermbg=black
+    highlight DiffDelete cterm=none ctermfg=darkred ctermbg=black
+    highlight DiffChange cterm=none ctermfg=none ctermbg=black
+    highlight DiffText cterm=none ctermfg=black ctermbg=darkyellow
+else
+    syntax enable
+    colorscheme molokai
+endif
+"set background=dark
+"let g:molokai_original = 1
 
 " Set high visibility for diff mode
-let g:solarized_diffmode="high"
+"let g:solarized_diffmode="low"
