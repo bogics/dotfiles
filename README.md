@@ -39,5 +39,6 @@ set splitright
 - tmux, ctrl-a + I
 - git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 - git clone https://github.com/tomasr/molokai
-- cp molokai/colors/molokai.vim ~/.vim/colors/
+- ~/.vim/colors/ && cp molokai/colors/molokai.vim ~/.vim/colors/
+- git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 - vim, :PluginInstall
