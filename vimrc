@@ -30,4 +30,10 @@ filetype plugin indent on    " required
 " open new split panes to right and bottom, which feels more natural than Vim's default:
 set splitbelow
 set splitright
-"
+
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Set high visibility for diff mode
+let g:solarized_diffmode="high"
