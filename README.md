@@ -36,8 +36,8 @@ set splitbelow
 set splitright  
 
 - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-- tmux, PREFIX + I
+- tmux, ctrl-a + I
 - git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-- vim, :PluginInstall
 - git clone https://github.com/tomasr/molokai
 - cp molokai/colors/molokai.vim ~/.vim/colors/
+- vim, :PluginInstall
