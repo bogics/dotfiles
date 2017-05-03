@@ -10,6 +10,7 @@ call vundle#begin()
 
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,20 +32,25 @@ filetype plugin indent on    " required
 set splitbelow
 set splitright
 
-" syntax enable
 if &diff
     syntax off
-    colorscheme molokai
-    highlight DiffAdd cterm=none ctermfg=green ctermbg=black
-    highlight DiffDelete cterm=none ctermfg=darkred ctermbg=black
-    highlight DiffChange cterm=none ctermfg=none ctermbg=black
-    highlight DiffText cterm=none ctermfg=black ctermbg=darkyellow
 else
     syntax enable
-    colorscheme molokai
 endif
-"set background=dark
-"let g:molokai_original = 1
 
-" Set high visibility for diff mode
-"let g:solarized_diffmode="low"
+colorscheme molokai
+highlight DiffAdd cterm=none ctermfg=green ctermbg=black
+highlight DiffDelete cterm=none ctermfg=darkred ctermbg=black
+highlight DiffChange cterm=none ctermfg=none ctermbg=black
+highlight DiffText cterm=none ctermfg=black ctermbg=darkyellow
+
+
+
+
+
+nnoremap <F2> :syntax off<CR>
+nnoremap <F3> :syntax enable<CR>
+nnoremap <F4> :highlight DiffAdd cterm=none ctermfg=green ctermbg=black<CR> :highlight DiffDelete cterm=none ctermfg=darkred ctermbg=black<CR> :highlight DiffChange cterm=none ctermfg=none ctermbg=black<CR> :highlight DiffText cterm=none ctermfg=black ctermbg=darkyellow<CR>
+
+
+
