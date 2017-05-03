@@ -9,7 +9,7 @@ call vundle#begin()
 
 
 Plugin 'christoomey/vim-tmux-navigator'
-
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
