@@ -39,3 +39,5 @@ set splitright
 - tmux, PREFIX + I
 - git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 - vim, :PluginInstall
+- git clone https://github.com/tomasr/molokai
+- cp molokai/colors/molokai.vim ~/.vim/colors/
