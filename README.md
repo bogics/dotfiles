@@ -35,3 +35,7 @@ In order to change this to down and right, which feels more naturally, add follo
 set splitbelow  
 set splitright  
 
+- git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+- tmux, PREFIX + I
+- git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+- vim, :PluginInstall
