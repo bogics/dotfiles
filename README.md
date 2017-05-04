@@ -36,7 +36,7 @@ set splitbelow
 set splitright  
 
 If NERDtree displays some odd characters and cannot enter dir with enter, add this to ~/.bashrc:
-export LC_CTYPE=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8  
 export LC_ALL=en_US.UTF-8
 
 - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
