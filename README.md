@@ -48,11 +48,9 @@ tmux-logging:
 -Clear pane history: prefix + alt + c  
 
 ### Installation  
-- cd ~  
-git clone https://github.com/bogics/dotfiles  
-ln -s dotfiles/tmux.conf .tmux.conf  
-ln -s dotfiles/vimrc .vimrc  
-Run `tmux` and check that `ctrl-a + I` splits screen vertically and `ctrl-a + -` splits screen horisontally  
+- git clone https://github.com/bogics/dotfiles  ~/dotfiles
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf  
+ln -s ~/dotfiles/vimrc ~/.vimrc  
 
 - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm  
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
@@ -60,3 +58,7 @@ git clone https://github.com/tomasr/molokai
 mkdir ~/.vim/colors/ && cp molokai/colors/molokai.vim ~/.vim/colors/  
 ln -s ~/.vim/bundle/vim-tmux-navigator ~/.tmux/plugins/vim-tmux-navigator  
 Launch `vim`, `:PluginInstall`  
+
+- Run `tmux` and check that `ctrl-a + I` splits screen vertically and `ctrl-a + -` splits screen horisontally  
+Enter `vim` from one tmux window and split screen in few horizontal (`:sp`) and vertical (`:vsp`) panes.  
+Navigate with `<ctrl-h,j,k,l,/>` between windows regardles they are tmux or vim splits.  
