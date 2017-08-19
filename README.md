@@ -8,7 +8,7 @@ Tmux:
 
 
 Defaults:  
-Default PREFIX: ctrl+b
+Default PREFIX: ctrl+b  
 Tmux split window (into panes):  
 Horizontally: PREFIX “  
 Vertically:     PREFIX %  
